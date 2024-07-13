@@ -1,4 +1,4 @@
-const { blue } = require('color-name')
+const { blue, purple } = require('color-name')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -12,9 +12,9 @@ module.exports = {
 		},
 		extend: {
 			colors: {
-				blue: '#8C82FC',
+				purple: '#8C82FC',
 				green: '#44E4C9',
-				sec: '#F8F8FF'
+				sec: '#E2E8F0'
 			}
 		}
 	},
