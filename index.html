@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,8 +23,65 @@
 		<title>Zuxs</title>
 	</head>
 	<body>
+		<!-- NAVBAR -->
+		<header
+			class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+			<div class="container">
+				<div
+					class="flex items-center justify-between relative px-6 lg:px-32">
+					<div class="flex items-center gap-2 py-5">
+						<img src="assets/images/favicon.png" alt="Logo" class="w-7" />
+						<p class="font-extrabold text-xl">Zuxs</p>
+					</div>
+
+					<div class="flex items-center">
+						<button id="hamburger" class="lg:hidden">
+							<i
+								data-feather="menu"
+								class="w-10 h-7 border-2 border-black/40 rounded-lg"></i>
+						</button>
+
+						<nav
+							id="nav-menu"
+							class="hidden absolute py-5 border border-sec bg-white shadow-lg rounded-lg max-w-[200px] w-full right-4 top-20 lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:border-none">
+							<ul class="block gap-7 lg:flex lg:items-center">
+								<li class="group">
+									<a
+										href="#home"
+										class="flex justify-center font-semibold py-2 group-hover:text-purple">
+										Home
+									</a>
+								</li>
+								<li class="group">
+									<a
+										href="#learning"
+										class="flex justify-center font-semibold py-2 group-hover:text-purple">
+										Learnings
+									</a>
+								</li>
+								<li class="group">
+									<a
+										href="#about"
+										class="flex justify-center font-semibold py-2 group-hover:text-purple">
+										About Us
+									</a>
+								</li>
+								<li class="group">
+									<a
+										href="#testimonial"
+										class="flex justify-center font-semibold py-2 group-hover:text-purple">
+										Testimonial
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
 		<!-- HERO SECTION -->
-		<section id="home" class="px-6 pt-10 lg:px-40">
+		<section id="home" class="px-6 pt-32 lg:px-40">
 			<div class="container">
 				<div
 					class="flex flex-wrap gap-5 lg:flex-nowrap lg:flex-row-reverse">
@@ -429,6 +486,8 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="assets/JS/script.js"></script>
 
 		<script>
 			feather.replace()
